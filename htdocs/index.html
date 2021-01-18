@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Credibility Factory</title>
+		<meta charset="UTF-8">
+	  	<meta name="description" content="Credibility Factory">
+	  	<meta name="keywords" content="Fake News, Checking Correct Sources, How to Check Credibility">
+	  	<meta name="author" content="Gef Eigen Lim">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--button icon-->
+	 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+        <!--website favicon-->
+	 	<link rel="icon" href="../images/icon.png" type="image/png">
+        <!--external css-->
+        <link rel="stylesheet" href="../cssdocs/website_styling.css" type="text/css"  >
+        <!--internal javascript for opening and closing nav-->
+        <script type="text/javascript" charset="UTF-8">
+            window.addEventListener("load", () => {
+                document.body.classList.remove("actual_stuff");
+            });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const nav = document.querySelector(".nav");
+                
+                //open nav
+                document.querySelector("#navbutton").addEventListener("click", () => {
+                nav.classList.add("opened_menu");
+                });
+                
+                //close nav when outside nav area is clicked
+                document.querySelector(".blur_thingy_menu").addEventListener("click", () => {
+                nav.classList.remove("opened_menu");
+                });
+
+                //close nav when x button is pressed
+                document.querySelector(".close_button").addEventListener("click", () => {
+                nav.classList.remove("opened_menu");
+                });
+            });
+        </script>
+	</head>
+	<body class="actual_stuff">
+		<header>
+            <!--menu button-->
+        	<button class="menu_button" id="navbutton" type="button">
+                    <i class="material-icons">menu</i>
+        	</button>
+            <!--icon image in header-->
+            <a class="header_button" href="index.html">
+            	<img class=icon_header src="https://i.ibb.co/nMB5Cmj/icon.png" alt="icon of website">
+            </a>
+    	</header>
+        <!--navigation-->
+    	<nav class="nav">
+        	<div class="button_links">
+                <!--close button-->
+                <a href="#" class="close_button">&nbsp;&nbsp;&nbsp;&times;</a>
+                <!--active home button-->
+                <a href="index.html" class="indiv_button_link indiv_button_link--active">
+                    Home
+                </a>
+                <!--importantce of credible sources button-->
+            	<a href="2nd page.html" class="indiv_button_link">
+                	Importance of Credible Sources
+            	</a>
+                <!--the spread of misinformation button-->
+                <a href="3rd page.html" class="indiv_button_link">
+                    The Misinformation Pandemic
+                </a>
+                <!--dangers of misinformation button-->
+           		<a href="4th page.html" class="indiv_button_link">
+               		Dangers of Misinformation
+            	</a>
+                <!--checking credibility button-->
+            	<a href="5th page.html" class="indiv_button_link" >
+                	How to Check If a Source is Credible
+            	</a>
+                
+        	</div>
+            <!--blur for when nav is opened-->
+            <div class="blur_thingy_menu"></div>
+    	</nav>
+        <main>
+            <img class="main_image" src="https://i.ibb.co/Xx7HL4Z/factory-one.png" alt="credibility factory graphic">
+            <div class="main-text">
+                <h1>Credibility<br>Factory</h1>
+
+                <p>A website dedicated to informing people on the dangers of misinformation and how to evaluate the credibility of sources. This website aims to help its readers about evaluating sources and determining its credibility. In today's time, the internet is riddled with fake news, misinformation, untrustworthy sources, and this website will be your guide to distinguish credible sources from not credible ones and to help you learn how dangerous misinformation is and how you have the ability to not be a victim of it.</p>
+                <div class="stats_row">
+                    <div class="stats_column">
+                        <h5>76.2 Million</h5>
+                        <p class="stats">Filipinos use social media</p>
+                        <a href="https://www.statista.com/topics/6759/social-media-usage-in-the-philippines/#:~:text=The%20Philippines%20has%20one%20of,four%20hours%20using%20social%20media" class="stats_source" target="blank">source, Statista</a>
+                    </div>
+                    <div class="stats_column_spacer"></div>
+                    <div class="stats_column">
+                        <h5>4 Hours</h5>
+                        <p class="stats">are spent by Filipinos everyday using social media</p>
+                        <a href="https://www.statista.com/topics/6759/social-media-usage-in-the-philippines/#:~:text=The%20Philippines%20has%20one%20of,four%20hours%20using%20social%20media" class="stats_source" target="blank">source, Statista</a>
+                    </div>
+                    <div class="stats_column_spacer_two"></div>
+                    <div class="stats_column">
+                        <h5>92.74%</h5>
+                        <p class="stats">is Facebook’s market share of the social media market in the Philippines</p>
+                        <a href="https://www.statista.com/topics/6759/social-media-usage-in-the-philippines/#:~:text=The%20Philippines%20has%20one%20of,four%20hours%20using%20social%20media" class="stats_source" target="blank">source, Statista</a>
+                    </div>
+                    <div class="stats_column_spacer"></div>
+                    <div class="stats_column">
+                        <h5>15%</h5>
+                        <p class="stats">of the time Facebook referred users to untrustworthy news sources in a study published</p>
+                        <a href="https://www.forbes.com/sites/traversmark/2020/03/21/facebook-spreads-fake-news-faster-than-any-other-social-website-according-to-new-research/?sh=46c682786e1a" class="stats_source" target="blank">source, Statista</a>
+                    </div>
+                </div>
+                <h2>About the Credibility Factory</h2>
+                <p>The Credibility Factory is a play on the idea of an actual factory. There are regulations and procedures in a factory to regulate the quality of a product and the product is discarded when a product is regarded as not passing on quality. This is how we should be with sources where any time we see one, we investigate and verify its authenticity and if the source does not pass quality then we should not trust and share this source with others.</p>
+                <img src="https://i.ibb.co/GJDqXQn/1st-factory.png" alt="1st factory" class="content_images">
+                &nbsp;
+                <hr>
+                <p style="text-align: center">Learn more about by clicking the next page button below, or by navigating through the menu in the upper left corner!</p>
+                <div class="learn_more">
+                    <a class="learn_more_button" href="2nd page.html">Learn More</a>
+                </div>
+                <hr>
+    	    </div>
+        </main>
+        <footer>
+            <!--first column of footer-->
+            <ul class="social_media_link">
+                <li class="twitter"><a href="https://twitter.com/ngeplim"></a></li>
+                <li class="carrd"><a href="https://ngepartportfolio.carrd.co"></a></li>
+                <li class="fb"><a href="https://www.facebook.com/gefeigen.lim"></a></li>
+            </ul>
+            <h4>Credibility
+            <br>Factory</h4>
+            <div class="column">
+                <!--second navigation-->
+                <h3>NAVIGATE</h3>
+                <a href="index.html" class="footer_nav">Home</a>
+                <br><a href="2nd page.html" class="footer_nav">Importance of Credible Sources</a>
+                <br><a href="3rd page.html" class="footer_nav">The Misinformation Pandemic</a>
+                <br><a href="4th page.html" class="footer_nav">Dangers of Misinformation</a>
+                <br><a href="5th page.html" class="footer_nav">How to Check If a Source is Credible</a>
+            </div>
+
+            <!--second column of footer-->
+            <div class="column_two">
+                <h3>Sources:</h3>
+                <p class="footer_text"></p>
+                <p class="footer_text">Media Sources:
+                <br>All illustrations, 3d art, and graphics are made by me
+                <br>Menu icon stylesheet from 
+                <a href="https://fonts.googleapis.com/icon?family=Material+Icons" target="blank">Google Icons</a>
+                <br>Images hosted with the use of 
+                <a href="https://imgbb.com/" target="blank">imgbb.com</a>
+                </p>
+            </div>
+            
+        </footer> 
+    </body>
+</html>

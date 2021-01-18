@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Credibility Factory</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Credibility Factory">
+        <meta name="keywords" content="Fake News, Checking Correct Sources, How to Check Credibility">
+        <meta name="author" content="Gef Eigen Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--button icon-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--website favicon-->
+        <link rel="icon" href="../images/icon.png" type="image/png">
+        <!--external css-->
+        <link rel="stylesheet" href="../cssdocs/website_styling.css">
+        <!--internal javascript for opening and closing nav-->
+        <script type="text/javascript" charset="UTF-8">
+            window.addEventListener("load", () => {
+                document.body.classList.remove("actual_stuff");
+            });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const nav = document.querySelector(".nav");
+                
+                //open nav
+                document.querySelector("#navbutton").addEventListener("click", () => {
+                nav.classList.add("opened_menu");
+                });
+                
+                //close nav when outside nav area is clicked
+                document.querySelector(".blur_thingy_menu").addEventListener("click", () => {
+                nav.classList.remove("opened_menu");
+                });
+
+                //close nav when x button is pressed
+                document.querySelector(".close_button").addEventListener("click", () => {
+                nav.classList.remove("opened_menu");
+                });
+            });
+        </script>
+    </head>
+    <body class="actual_stuff">
+        <header>
+            <!--menu button-->
+            <button class="menu_button" id="navbutton" type="button">
+                <i class="material-icons">menu</i>
+            </button>
+            <!--icon image in header-->
+            <a class="header_button" href="index.html">
+                <img class=icon_header src="https://i.ibb.co/nMB5Cmj/icon.png" alt="icon of website">
+            </a>
+        </header>
+        <!--navigation-->
+        <nav class="nav">
+            <div class="button_links">
+                <!--close button-->
+                <a href="#" class="close_button">&nbsp;&nbsp;&nbsp;&times;</a>
+                <!--home button-->
+                <a href="index.html" class="indiv_button_link" >
+                    Home
+                </a>
+                <!--active credible sources button-->
+                <a href="2nd page.html" class="indiv_button_link indiv_button_link--active">
+                    Importance of Credible Sources
+                </a>
+                <!--dangers of untrustworthy sources button-->
+                <a href="3rd page.html" class="indiv_button_link" >
+                    The Misinformation Pandemic
+                </a>
+                <!--how to spot fake sources button-->
+                <a href="4th page.html" class="indiv_button_link">
+                    Dangers of Misinformation
+                </a>
+                <!--how to check credibility button-->
+                <a  href="5th page.html" class="indiv_button_link">
+                    How to Check If a Source is Credible
+                </a>
+            </div>
+        <!--blur for when nav is opened-->
+        <div class="blur_thingy_menu"></div>
+        </nav>
+        <main>
+            <img class="main_image" src="https://i.ibb.co/68KBjD8/importance-graphic.png" alt="importance of credible sources graphic">
+            <div class="main-text">
+                <h1>Importance of<br>Credible Sources</h1>
+                <h2>What are the Different Types of Sources?</h2>
+                <p class="list_header">Primary Sources</p>
+                <ul>
+                    <li>These are sources that come from the origin of information itself, which has not been interpreted by someone.</li>
+                    <li>Examples of these are:<br> diaries, speeches, interviews, manuscripts, novels, poetry, music, pottery, and many more.</li>
+                </ul>
+                <p class="list_header">Secondary Sources</p>
+                <ul>
+                    <li>These are sources that have been interpreted and described, where this source did not experience or participate first-hand in what happened.</li>
+                    <li>Examples of these are:<br> bibiliography, commentaries, essays, magazine articles, newspaper articles, reprints of art work, and many more.</li>
+                </ul>
+                <p class="list_header">Tertiary Sources</p>
+                <ul>
+                    <li>These sources present summarized versions of materials and/or condensed ones.</li>
+                    <li>Examples of these are:<br> almanacs, dictionaries, encyclopedias, and many more.</li>
+                </ul> 
+                <h2>Importance of Knowing the Types of Sources</h2>
+                <ul>
+                    <li>Different needs for information calls for a different type of source; for example, if an autobiography of Jose Rizal is to be used, but a biography was used, there may be inaccurate data used in the biography compared to the original manuscript of his autobiography says.</li>
+                    <li>Using the right type of source to present arguments and research is needed since different sources have different authenticities and using the right type of source would make the argument stronger and harder to dispute.</li>
+                    <li>Knowing the type of source is also essential in citing references as different types of sources call for different types of references so that plagiarism would not occur.
+                    </li>
+                </ul>
+                <h2>Importance of Using Credible Sources</h2>
+                <p>It is very important to use credible and reliable sources, particularly in a professional setting, because it would result in people's work leading to misinformation especially without any proof supporting claims or data or using unapproved sources.</p>
+            </div>
+        </main>
+        <footer>
+            <!--first column of footer-->
+            <h4>Credibility
+            <br>Factory</h4>
+            <div class="column">
+                <!--second navigation-->
+                <h3>NAVIGATE</h3>
+                <a href="index.html" class="footer_nav">Home</a>
+                <br><a href="2nd page.html" class="footer_nav">Importance of Credible Sources</a>
+                <br><a href="3rd page.html" class="footer_nav">The Misinformation Pandemic</a>
+                <br><a href="4th page.html" class="footer_nav">Dangers of Misinformation</a>
+                <br><a href="5th page.html" class="footer_nav">How to Check If a Source is Credible</a>
+            </div>
+
+            <!--second column of footer-->
+            <div class="column_two">
+                <h3>Sources:</h3>
+                <p class="footer_text"></p>
+                <p class="footer_text">Media Sources:
+                <br>All illustrations, 3d art, and graphics are made by me
+                <br>Menu icon stylesheet from 
+                <a href="https://fonts.googleapis.com/icon?family=Material+Icons" target="blank">Google Icons</a>
+                <br>Images hosted with the use of 
+                <a href="https://imgbb.com/" target="blank">imgbb.com</a>
+                </p>
+            </div>
+        </footer> 
+    </body>
+</html>
