@@ -166,6 +166,7 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 1;
 }
 
 /*not blurred menu*/
