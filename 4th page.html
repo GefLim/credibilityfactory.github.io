@@ -18,7 +18,7 @@
             window.addEventListener("load", () => {
                 document.body.classList.remove("actual_stuff");
             });
-
+            
             document.addEventListener("DOMContentLoaded", () => {
                 const nav = document.querySelector(".nav");
                 
@@ -31,7 +31,7 @@
                 document.querySelector(".blur_thingy_menu").addEventListener("click", () => {
                 nav.classList.remove("opened_menu");
                 });
-
+            
                 //close nav when x button is pressed
                 document.querySelector(".close_button").addEventListener("click", () => {
                 nav.classList.remove("opened_menu");
@@ -43,11 +43,11 @@
         <header>
             <!--menu button-->
             <button class="menu_button" id="navbutton" type="button">
-                <i class="material-icons">menu</i>
+            <i class="material-icons">menu</i>
             </button>
             <!--icon image in header-->
             <a class="header_button" href="index.html">
-                <img class=icon_header src="https://i.ibb.co/nMB5Cmj/icon.png" alt="icon of website">
+            <img class=icon_header src="https://i.ibb.co/nMB5Cmj/icon.png" alt="icon of website">
             </a>
         </header>
         <!--navigation-->
@@ -57,46 +57,63 @@
                 <a href="#" class="close_button">&nbsp;&nbsp;&nbsp;&times;</a>
                 <!--home button-->
                 <a href="index.html" class="indiv_button_link" >
-                    Home
+                Home
                 </a>
                 <!--active credible sources button-->
                 <a href="2nd page.html" class="indiv_button_link">
-                    Importance of Credible Sources
+                Importance of Credible Sources
                 </a>
                 <!--dangers of untrustworthy sources button-->
                 <a href="3rd page.html" class="indiv_button_link" >
-                    Misinformation, Fake News, and More
+                Misinformation, Fake News, and More
                 </a>
                 <!--how to spot fake sources button-->
                 <a href="4th page.html" class="indiv_button_link indiv_button_link--active">
-                    Dangers of Misinformation
+                Dangers of Misinformation
                 </a>
                 <!--how to check credibility button-->
                 <a  href="5th page.html" class="indiv_button_link">
-                    How to Check If a Source is Credible
+                How to Check If a Source is Credible
                 </a>
             </div>
-        <!--blur for when nav is opened-->
-        <div class="blur_thingy_menu"></div>
+            <!--blur for when nav is opened-->
+            <div class="blur_thingy_menu"></div>
         </nav>
         <main>
             <img class="main_image" src="https://i.ibb.co/sKZBd5N/spread-of-misinformation-Current-View.png" alt="dangers of misinformation image">
             <div class="main-text">
-                <h1>Dangers of<br>Misinformation, Fake news<br>, and More</h1>
-                <h2>Medical Misinformation:</h2>
+                <h1>Dangers of<br>Misinformation</h1>
+                <h2 style="background-color: #f7d186">Medical Misinformation:</h2>
                 <p>Misinformation has plagued Filipinos in medical advice where inefficient and false methods of "battling" the virus have been used. Medical misinformation is the most dangerous misinformation of all.</p>
-                <h2>Fear Mongering:</h2>
-                <p>The unnecessary fear created by fake news causes people to be scared of something that they should not be. For example, the COVID-19 vaccine, where most Filipinos feel scared of the vaccine, thinking that the vaccine would lead to an infection.</p>
-
+                <br>
+                <iframe class="embedded_vid" src="https://www.youtube.com/embed/Xl9zgDGko5U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 style="background-color: #f7d186">Fear Mongering:</h2>
+                <p>The unnecessary fear created by fake news causes people to be scared of something they should not. For example, the COVID-19 vaccine, where most Filipinos feel scared of the vaccine, thinking that the vaccine would lead to an infection.</p>
+                <iframe class="embedded_vid" src="https://www.youtube.com/embed/McQcsuB0frc"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h2 style="background-color: #f7d186">Manipulation:</h2>
+                <p>An agenda usually drives misinformation, and when a person gets misinformed with this agenda in mind, they change their beliefs. This is harmful as misinformation gives a way to discredit people, organizations, and many more without checking these sources' validity; people will fall into the fake news creators' agenda to not trust these organizations anymore.</p>
+                <hr>
+                <br>
+                <!--previous button-->
+                <a href="3rd page.html" class="prev_button links">&laquo;&laquo; Previous Page</a>
+                <!--next button-->
+                <a href="5th page.html" class="next_button links">Next Page &#8250;&#8250;</a>
+                <h6 class="soc_med_text" style="text-align: center">
+                        You can contact me via
+                    <br>Twitter and Facebook. 
+                    <br>Check out more of my renders
+                    <br>in my Carrd portfolio!
+                </h6>
                 <div class="socmed">
                     <div class="center">
-                        <a href="https://twitter.com/ngeplim">
+                        <a href="https://twitter.com/ngeplim" target="blank">
                             <div class="twt"></div>
                         </a>
-                        <a href="https://ngepartportfolio.carrd.co">
+                        <a href="https://ngepartportfolio.carrd.co" target="blank">
                             <div class="carrd"></div>
                         </a>
-                        <a href="https://www.facebook.com/gefeigen.lim">
+                        <a href="https://www.facebook.com/gefeigen.lim" target="blank">
                             <div class="fb"></div>
                         </a>
                     </div>
@@ -106,7 +123,8 @@
         <footer>
             <!--first column of footer-->
             <h4>Credibility
-            <br>Factory</h4>
+                <br>Factory
+            </h4>
             <div class="column">
                 <!--second navigation-->
                 <h3>NAVIGATE</h3>
@@ -116,19 +134,26 @@
                 <br><a href="4th page.html" class="footer_nav">Dangers of Misinformation</a>
                 <br><a href="5th page.html" class="footer_nav">How to Check If a Source is Credible</a>
             </div>
-
             <!--second column of footer-->
             <div class="column_two">
                 <h3>Sources:</h3>
-                <p class="footer_text">Primary, Secondary and Tertiary Sources: Types of Sources. (n.d.). Retrieved October 23, 2020, from https://sia.libguides.com/c.php?g=521408<br> Q. How do I determine what type of source I am using in order to create a citation? (n.d.). Retrieved October 23, 2020, from https://chat.library.berkeleycollege.edu/faq/204372</p>
+                <p class="footer_text">How do I determine what type of source I am using in order to create a citation? (n.d.). Retrieved October 23, 2020, from https://chat.library.berkeleycollege.edu/faq/204372
+                <br>PBS NewsHour. (2020). The dangerous global flood of misinformation surrounding COVID-19 [YouTube Video]. In YouTube. https://www.youtube.com/watch?v=Xl9zgDGko5U&ab_channel=PBSNewsHour
+                <br>eNCA. (2020). Discussion | Fake News and fear-mongering [YouTube Video]. In YouTube. https://www.youtube.com/watch?v=McQcsuB0frc&ab_channel=eNCA
+                </p>
                 <p class="footer_text">Media Sources:
-                <br>All illustrations, 3d art, and graphics are made by me
-                <br>Menu icon stylesheet from 
-                <a href="https://fonts.googleapis.com/icon?family=Material+Icons" target="blank">Google Icons</a>
-                <br>Images hosted with the use of 
-                <a href="https://imgbb.com/" target="blank">imgbb.com</a>
+                    <br>Facebook icon modelled from <a href="https://en.facebookbrand.com/facebookapp/" target="blank" class="links">Facebook Brand Resources</a>
+                    <br>Twitter icon modelled from <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" target="blank" class="links">Twitter Brand Toolkit</a>
+                    <br>Carrd icon obtained from <a href="https://carrd.co/docs/general/brand-assets" target="blank" class="links">Carrd Brand Assets</a>
+                    <br>Conveyer belt Free 3d Model obtained from <a href="https://www.turbosquid.com/3d-models/3d-arnold-belt/1123702" target="blank" class="links">turbosquid.com</a>
+                    <br>Menu icon stylesheet from 
+                    <a href="https://fonts.googleapis.com/icon?family=Material+Icons" target="blank" class="links">Google Icons</a>
+                    <br>Images hosted with the use of 
+                    <a href="https://imgbb.com/" target="blank" class="links">imgbb.com</a>
+                    <br>YouTube videos embedded with the use of embed feature of YouTube
+                    <br><br>Images used were all made, modelled, and rendered by me using Adobe Dimension, and Blender 3d
                 </p>
             </div>
-        </footer> 
+        </footer>
     </body>
 </html>
